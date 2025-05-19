@@ -112,4 +112,3 @@ Las tareas están gestionadas en la sección **Issues** y **Projects** del repos
 
 ## 🌐 Demo en línea
 
-> [https://tuecommerce.vercel.app](https://tuecommerce.vercel.app)
