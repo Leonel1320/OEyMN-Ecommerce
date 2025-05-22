@@ -3,6 +3,8 @@ import { Navbar } from "../components/shared/navbar"
 import { Footer } from "../components/shared/footer"
 import { Banner } from "../home/Banner";
 import { NewsLetter } from "../home/NewsLetter";
+import { ScrollToTopButton } from "../components/shared/ScrollToTopButton"; // Importa nuevo componente (ScrollToTopButton.tsx)
+
 
 
 export const Rootlayout = () => {
@@ -14,7 +16,7 @@ export const Rootlayout = () => {
 
       {pathname === '/' && (<Banner />)}
 
-      <main className="container my-8 flex-1">
+      <main className="my-8 flex-1 px-4 md:px-8 lg:px-16">{/* Modificado para centrar el contenido de las paginas */}
         <Outlet />
       </main>
 
@@ -23,6 +25,8 @@ export const Rootlayout = () => {
 
 
       <Footer />
+      <ScrollToTopButton /> {/* Añade el botón aquí */}
+
     </div>
   )
 }

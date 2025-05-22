@@ -9,7 +9,7 @@ export const navbarLinks=[
     },
     {
         id:2,
-        title: 'Components',
+        title: 'Componentes',
         href: '/componentes' 
     },
     {
