@@ -3,7 +3,7 @@ import { NavLink,Link } from "react-router-dom";
 import { navbarLinks } from "../../constants/navbarLinks";
 import { HiOutlineSearch, HiOutlineShoppingBag } from "react-icons/hi";
 import { FaBarsStaggered } from "react-icons/fa6";
-import {Logo} from "./logo"
+import {Logo} from "./Logo"
 
 
 export const Navbar = () => {
