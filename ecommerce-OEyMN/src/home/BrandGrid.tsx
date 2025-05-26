@@ -1,11 +1,11 @@
 
 const brands = [
-  { name: 'Intel', logo: '/public/img/Brands/intel-company-logo.png' },
-  { name: 'Nvidia', logo: '/public/img/Brands/Logo-NVIDIA.png' },
-  { name: 'AMD', logo: '/public/img/Brands/AMD_logo_pre-2013.svg.png' },
-  { name: 'Corsair', logo: '/public/img/Brands/Corsair_2020_logo.svg.png' },
-  { name: 'ASUS', logo: '/public/img/Brands/asus-37494 (1).png' },
-  { name: 'MSI', logo: '/public/img/Brands/MSI-Logo.webp' },
+  { name: 'Intel', logo: '/img/Brands/intel-company-logo.png' },
+  { name: 'Nvidia', logo: '/img/Brands/Logo-NVIDIA.png' },
+  { name: 'AMD', logo: '/img/Brands/AMD_logo_pre-2013.svg.png' },
+  { name: 'Corsair', logo: '/img/Brands/Corsair_2020_logo.svg.png' },
+  { name: 'ASUS', logo: '/img/Brands/asus-37494 (1).png' },
+  { name: 'MSI', logo: '/img/Brands/MSI-Logo.webp' },
 ];
 
 const BrandGrid = () => {

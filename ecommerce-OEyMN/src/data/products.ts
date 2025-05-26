@@ -11,45 +11,12 @@ export interface Product {
     relatedProductIds?: string[];
 }
 
-// --- IMÁGENES ---
-import producto1Img from '../../public/img/products/producto1.webp';
-import producto2Img from '../../public/img/products/producto2.webp';
-import producto3Img from '../../public/img/products/producto3.webp';
-import producto5Img from '../../public/img/products/producto4.webp';
-import producto4Img from '../../public/img/products/producto5.webp';
-import producto6Img from '../../public/img/products/producto6.webp';
-import producto7Img from '../../public/img/products/producto7.webp';
-import producto8Img from '../../public/img/products/producto8.webp';
-import producto9Img from '../../public/img/products/producto9.webp';
-import producto10Img from '../../public/img/products/producto10.webp';
-import producto11Img from '../../public/img/products/producto11.webp';
-import producto12Img from '../../public/img/products/producto12.webp';
-import producto13Img from '../../public/img/products/producto13.webp';
-import producto14Img from '../../public/img/products/producto14.webp';
-import producto15Img from '../../public/img/products/producto15.webp';
-import producto16Img from '../../public/img/products/producto16.webp';
-import producto17Img from '../../public/img/products/producto17.webp';
-import producto18Img from '../../public/img/products/producto18.webp';
-import producto19Img from '../../public/img/products/producto19.webp';
-import producto20Img from '../../public/img/products/producto20.webp';
-import producto21Img from '../../public/img/products/producto21.webp';
-import producto22Img from '../../public/img/products/producto22.webp';
-import producto23Img from '../../public/img/products/producto23.webp';
-import producto24Img from '../../public/img/products/producto24.webp';
-import producto25Img from '../../public/img/products/producto25.webp';
-import producto26Img from '../../public/img/products/producto26.webp';
-import producto27Img from '../../public/img/products/producto27.webp';
-import producto28Img from '../../public/img/products/producto28.webp';
-import producto29Img from '../../public/img/products/producto29.webp';
-import producto30Img from '../../public/img/products/producto30.webp';
-import producto31Img from '../../public/img/products/producto31.webp';
-import producto32Img from '../../public/img/products/producto32.webp';
-// --- FIN DE IMÁGENES ---
+
 
 export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito aquí
     {
         id: '1',
-        imageUrl: producto1Img,
+        imageUrl: '/img/products/producto1.webp',
         altText: 'Procesador Intel Core i7',
         name: 'Procesador Intel Core i7',
         description: 'Potente procesador de 8 núcleos para un rendimiento excepcional.',
@@ -68,7 +35,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '2',
-        imageUrl: producto2Img,
+        imageUrl: '/img/products/producto2.webp',
         altText: 'Tarjeta Gráfica NVIDIA RTX 3060',
         name: 'Tarjeta Gráfica NVIDIA RTX 3060',
         description: 'Rendimiento gráfico de alta gama para juegos y creación de contenido.',
@@ -85,7 +52,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '3',
-        imageUrl: producto3Img,
+        imageUrl: '/img/products/producto3.webp',
         altText: 'Memoria RAM Corsair Vengeance',
         name: 'Memoria RAM Corsair Vengeance 16GB',
         description: 'Módulo de memoria DDR4 de alta velocidad para gaming y multitarea.',
@@ -103,7 +70,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '4',
-        imageUrl: producto4Img,
+        imageUrl: '/img/products/producto4.webp',
         altText: 'Procesador Intel Core i5',
         name: 'Procesador Intel Core i5',
         description: 'Potente procesador de 4 núcleos para un rendimiento excepcional.',
@@ -120,7 +87,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '5',
-        imageUrl: producto5Img,
+        imageUrl: '/img/products/producto5.webp',
         altText: 'Tarjeta Gráfica NVIDIA GTX 1660 Ti',
         name: 'Tarjeta Gráfica NVIDIA GTX 1660 Ti',
         description: 'Excelente rendimiento para gaming en 1080p y tareas multimedia.',
@@ -138,7 +105,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '6',
-        imageUrl: producto6Img,
+        imageUrl: '/img/products/producto6.webp',
         altText: 'Portátil Dell XPS 13 (Reacondicionado)',
         name: 'Portátil Dell XPS 13 (Reacondicionado)',
         description: 'Potente y ligero portátil reacondicionado, ideal para trabajo o estudio.',
@@ -155,7 +122,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '7',
-        imageUrl: producto7Img,
+        imageUrl: '/img/products/producto7.webp',
         altText: 'Procesador AMD Ryzen 5',
         name: 'Procesador AMD Ryzen 5',
         description: 'Procesador de seis núcleos ideal para gaming y productividad.',
@@ -172,7 +139,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '8',
-        imageUrl: producto8Img,
+        imageUrl: '/img/products/producto8.webp',
         altText: 'Tarjeta Gráfica AMD Radeon RX 6600',
         name: 'Tarjeta Gráfica AMD Radeon RX 6600',
         description: 'Excelente rendimiento para juegos en 1080p.',
@@ -189,7 +156,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '9',
-        imageUrl: producto9Img,
+        imageUrl: '/img/products/producto9.webp',
         altText: 'Memoria RAM Kingston Fury 16GB',
         name: 'Memoria RAM Kingston Fury 16GB',
         description: 'Memoria DDR4 de alto rendimiento para equipos exigentes.',
@@ -207,7 +174,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '10',
-        imageUrl: producto10Img,
+        imageUrl: '/img/products/producto10.webp',
         altText: 'Disco SSD Samsung 1TB (Reacondicionado)',
         name: 'Disco SSD Samsung 1TB (Reacondicionado)',
         description: 'Almacenamiento rápido y confiable, reacondicionado y garantizado.',
@@ -224,7 +191,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '11',
-        imageUrl: producto11Img,
+        imageUrl: '/img/products/producto11.webp',
         altText: 'Placa Base ASUS Prime (Reacondicionada)',
         name: 'Placa Base ASUS Prime (Reacondicionada)',
         description: 'Placa base reacondicionada compatible con procesadores Intel.',
@@ -241,7 +208,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '12',
-        imageUrl: producto12Img,
+        imageUrl: '/img/products/producto12.webp',
         altText: 'Fuente de Poder Corsair 650W (Reacondicionada)',
         name: 'Fuente de Poder Corsair 650W (Reacondicionada)',
         description: 'Fuente de poder eficiente y segura, reacondicionada.',
@@ -258,7 +225,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '13',
-        imageUrl: producto13Img,
+        imageUrl: '/img/products/producto13.webp',
         altText: 'Placa Base MSI B450M',
         name: 'Placa Base MSI B450M',
         description: 'Placa base micro ATX para procesadores AMD Ryzen, ideal para equipos de gama media.',
@@ -275,7 +242,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '14',
-        imageUrl: producto14Img,
+        imageUrl: '/img/products/producto14.webp',
         altText: 'Memoria RAM Crucial 8GB',
         name: 'Memoria RAM Crucial 8GB',
         description: 'Módulo DDR4 de 8GB, perfecto para tareas básicas y equipos de oficina.',
@@ -292,7 +259,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '15',
-        imageUrl: producto15Img,
+        imageUrl: '/img/products/producto15.webp',
         altText: 'Tarjeta Gráfica GTX 1050 Ti',
         name: 'Tarjeta Gráfica GTX 1050 Ti',
         description: 'Tarjeta gráfica de gama baja, ideal para juegos ligeros y multimedia.',
@@ -309,7 +276,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '16',
-        imageUrl: producto16Img,
+        imageUrl: '/img/products/producto16.webp',
         altText: 'Fuente de Poder EVGA 500W',
         name: 'Fuente de Poder EVGA 500W',
         description: 'Fuente de poder económica y confiable para PCs de entrada.',
@@ -326,7 +293,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '17',
-        imageUrl: producto17Img,
+        imageUrl: '/img/products/producto17.webp',
         altText: 'Disco Duro Seagate 1TB',
         name: 'Disco Duro Seagate 1TB',
         description: 'Almacenamiento mecánico de 1TB, ideal para guardar archivos y documentos.',
@@ -343,7 +310,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '18',
-        imageUrl: producto18Img,
+        imageUrl: '/img/products/producto18.webp',
         altText: 'Gabinete Aerocool Bolt Mini',
         name: 'Gabinete Aerocool Bolt Mini',
         description: 'Gabinete compacto y económico para equipos de gama baja o media.',
@@ -360,7 +327,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '19',
-        imageUrl: producto19Img,
+        imageUrl: '/img/products/producto19.webp',
         altText: 'Procesador Intel Pentium Gold G6400',
         name: 'Procesador Intel Pentium Gold G6400',
         description: 'Procesador de 2 núcleos, ideal para tareas básicas y oficina.',
@@ -377,7 +344,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '20',
-        imageUrl: producto20Img,
+        imageUrl: '/img/products/producto20.webp',
         altText: 'Memoria RAM Patriot Signature 4GB',
         name: 'Memoria RAM Patriot Signature 4GB',
         description: 'Módulo DDR4 de 4GB, perfecto para PCs de bajo presupuesto.',
@@ -394,7 +361,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '21',
-        imageUrl: producto21Img,
+        imageUrl: '/img/products/producto21.webp',
         altText: 'Tarjeta Gráfica GT 710 2GB',
         name: 'Tarjeta Gráfica GT 710 2GB',
         description: 'Tarjeta gráfica básica para tareas multimedia y ofimática.',
@@ -411,7 +378,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '22',
-        imageUrl: producto22Img,
+        imageUrl: '/img/products/producto22.webp',
         altText: 'Disco Duro Western Digital 500GB',
         name: 'Disco Duro Western Digital 500GB',
         description: 'Disco duro mecánico de 500GB, económico y confiable.',
@@ -428,7 +395,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '23',
-        imageUrl: producto23Img,
+        imageUrl: '/img/products/producto23.webp',
         altText: 'Fuente de Poder Noga 450W',
         name: 'Fuente de Poder Noga 450W',
         description: 'Fuente de poder básica para equipos de oficina o bajo consumo.',
@@ -445,7 +412,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '24',
-        imageUrl: producto24Img,
+        imageUrl: '/img/products/producto24.webp',
         altText: 'Gabinete Sentey Slim',
         name: 'Gabinete Sentey Slim',
         description: 'Gabinete compacto y económico, ideal para PCs de oficina.',
@@ -462,7 +429,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '25',
-        imageUrl: producto25Img,
+        imageUrl: '/img/products/producto25.webp',
         altText: 'Disco SSD Kingston A400 240GB',
         name: 'Disco SSD Kingston A400 240GB',
         description: 'SSD rápido y confiable para mejorar el rendimiento de tu PC.',
@@ -479,7 +446,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '26',
-        imageUrl: producto26Img,
+        imageUrl: '/img/products/producto26.webp',
         altText: 'Memoria RAM G.Skill Ripjaws 8GB',
         name: 'Memoria RAM G.Skill Ripjaws 8GB',
         description: 'Memoria DDR4 de alto rendimiento para gaming y edición.',
@@ -496,7 +463,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '27',
-        imageUrl: producto27Img,
+        imageUrl: '/img/products/producto27.webp',
         altText: 'Tarjeta Madre ASRock H310CM',
         name: 'Tarjeta Madre ASRock H310CM',
         description: 'Placa base compacta compatible con procesadores Intel de 8va y 9na generación.',
@@ -513,7 +480,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '28',
-        imageUrl: producto28Img,
+        imageUrl: '/img/products/producto28.webp',
         altText: 'Fuente de Poder Thermaltake 600W',
         name: 'Fuente de Poder Thermaltake 600W',
         description: 'Fuente de poder eficiente y silenciosa para equipos de alto rendimiento.',
@@ -530,7 +497,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '29',
-        imageUrl: producto29Img,
+        imageUrl: '/img/products/producto29.webp',
         altText: 'Gabinete Cooler Master MasterBox Q300L',
         name: 'Gabinete Cooler Master MasterBox Q300L',
         description: 'Gabinete versátil y moderno con excelente flujo de aire.',
@@ -547,7 +514,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '30',
-        imageUrl: producto30Img,
+        imageUrl: '/img/products/producto30.webp',
         altText: 'Procesador AMD Ryzen 3 3200G',
         name: 'Procesador AMD Ryzen 3 3200G',
         description: 'Procesador con gráficos integrados, ideal para PCs de oficina y hogar.',
@@ -565,7 +532,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '31',
-        imageUrl: producto31Img,
+        imageUrl: '/img/products/producto31.webp',
         altText: 'Disco Duro Toshiba 2TB',
         name: 'Disco Duro Toshiba 2TB',
         description: 'Gran capacidad de almacenamiento para archivos y copias de seguridad.',
@@ -582,7 +549,7 @@ export const allHardwareProducts: Product[] = [ // Agregué el tipo explícito a
     },
     {
         id: '32',
-        imageUrl: producto32Img,
+        imageUrl: '/img/products/producto32.webp',
         altText: 'Memoria RAM HyperX Fury 32GB',
         name: 'Memoria RAM HyperX Fury 32GB',
         description: 'Kit de memoria DDR4 de 32GB para estaciones de trabajo y gaming extremo.',
