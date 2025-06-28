@@ -8,19 +8,19 @@ export const Logo = () => {
       className="flex items-center gap-3 text-2xl font-bold tracking-tighter transition-all"
     >
       <img
-        src='/public/img/foto.png'
+        src='/img/foto.png'
         alt="Logo Capibyte"
         className="w-10 h-10 object-contain"
       />
       <div className="leading-tight">
         <p className="hidden lg:block">
+          <span className="text-[#38761d] lexend">ECO</span>
 
-            ECO
-            <span className="text-cyan-600">MPUTER</span>
+          <span className="text-[#0b5394] lexend">MPUTERS</span>
         </p>
         <p className="flex text-4xl lg:hidden">
-            <span className="-skew-x-6">E</span>
-            <span className="text-cyan-600 skew-x-6">M</span>
+          <span className="text-[#38761d] -skew-x-6">E</span>
+          <span className="text-[#0b5394] skew-x-6">M</span>
 
         </p>
       </div>

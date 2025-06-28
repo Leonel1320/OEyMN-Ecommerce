@@ -1,2 +1,5 @@
 @import "tailwindcss";
 
+.lexend {
+  font-family: 'Lexend', sans-serif; /* 'Lexend' es el nombre de la fuente, 'sans-serif' es un fallback */
+}

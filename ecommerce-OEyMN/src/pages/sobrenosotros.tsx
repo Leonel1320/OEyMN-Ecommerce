@@ -1,5 +1,3 @@
-
-
 const SobreNosotros = () => {
   return (
 
@@ -9,7 +7,7 @@ const SobreNosotros = () => {
       <section className="flex-1 bg-gradient-to-br from-cyan-50 to-green-100 p-10 rounded-3xl shadow-2xl text-[#1f2937]">
         <div className="text-center">
           <img
-            src='/public/img/foto.png'
+            src='/img/foto.png'
             alt="Logo Ecomputers"
             className="w-40 h-40 mx-auto mb-4 animate-pulse"
           />

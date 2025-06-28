@@ -9,11 +9,16 @@ export const navbarLinks=[
     },
     {
         id:2,
-        title: 'Componentes',
+        title: 'Productos',
         href: '/componentes' 
     },
     {
         id:3,
+        title: 'Canje',
+        href: '/canje'
+    },
+    {
+        id:4,
         title: 'SobreNosotros',
         href: '/nosotros'
     }
