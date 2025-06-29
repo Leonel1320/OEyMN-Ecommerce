@@ -129,6 +129,10 @@ export default function SobreNosotros() {
           <ParallaxLayer offset={1} speed={0} factor={1} className="flex justify-center items-center px-4">
             <div className="w-full flex flex-col items-center">
               <h2 className="text-4xl font-bold text-white mb-12 text-center drop-shadow">Lo que hacemos por vos</h2>
+              <br />
+              <br />
+              <br />
+              
               <div className="hidden lg:block relative w-[680px] h-[680px]">
                 {servicios.map((srv, i) => {
                   const angle = (360 / servicios.length) * i;
