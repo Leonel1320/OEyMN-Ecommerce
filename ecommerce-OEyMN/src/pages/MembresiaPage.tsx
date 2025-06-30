@@ -81,10 +81,10 @@ export const MembresiaPage = () => {
     ];
 
     // Nuevos Precios de la membresía
-    const monthlyPriceARS = "9.999 ARS/mes";
-    const monthlyPriceUSD = "10 USD/mes";
-    const annualPriceARS = "99.999 ARS/año";
-    const annualPriceUSD = "99 USD/año";
+    const monthlyPriceARS = "19.999 ARS/mes";
+    const monthlyPriceUSD = "19 USD/mes";
+    const annualPriceARS = "199.999 ARS/año";
+    const annualPriceUSD = "199 USD/año";
 
     return (
         <div className="flex flex-col min-h-screen">
@@ -97,7 +97,7 @@ export const MembresiaPage = () => {
                         Únete a Nuestra Comunidad Sostenible
                     </h1>
                     <p className="text-xl md:text-2xl">
-                        ¡Gracias por tu interés en ser parte de Ecomputers!
+                        ¡Realiza una compra y conviertete en Miembro!
                     </p>
                 </div>
             </section>

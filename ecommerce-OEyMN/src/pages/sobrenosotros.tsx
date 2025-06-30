@@ -26,7 +26,7 @@ const servicios = [
     descripcion: "Garantía de 3 a 6 meses en reacondicionados o nuevos, con opciones extendidas."
   },
   {
-    titulo: "Membresía ECOM Care / PRO+",
+    titulo: "Membresía Ecomputers Club",
     ruta: "membresia",
     descripcion: "Mantenimiento mensual, soporte remoto, descuentos y acceso anticipado a nuevos equipos."
   },
