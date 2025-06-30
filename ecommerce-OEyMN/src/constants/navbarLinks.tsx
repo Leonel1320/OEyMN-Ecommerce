@@ -19,6 +19,11 @@ export const navbarLinks=[
     },
     {
         id:4,
+        title: 'Membresia',
+        href: '/membresia'
+    },
+    {
+        id:5,
         title: 'SobreNosotros',
         href: '/nosotros'
     }
