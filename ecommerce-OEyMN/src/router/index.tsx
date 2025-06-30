@@ -5,6 +5,7 @@ import Componentes from '../pages/Componentes';
 import SobreNosotros from '../pages/sobrenosotros'
 import ProductDetailPage from '../pages/ProductDetailPage'; // <-- ¡Importa tu nuevo componente!
 import CanjePage from '../pages/CanjePage';
+import MembresiaPage from '../pages/MembresiaPage';
 
 
 
@@ -21,15 +22,19 @@ export const router = createBrowserRouter([
                 path: 'Componentes',
                 element: <Componentes />,
             }, {
-                path: 'productos/:id', // Define esta ruta. Podría ser '/Componentes/:id' si quieres anidar
+                path: 'Productos/:id', // Define esta ruta. Podría ser '/Componentes/:id' si quieres anidar
                 element: <ProductDetailPage />,
             },
             {
-                path: 'canje',
+                path: 'Canje',
                 element: <CanjePage />,
             },
             {
-                path: 'nosotros',
+                path: 'Membresia',
+                element: <MembresiaPage />,
+            },
+            {
+                path: 'Nosotros',
                 element: <SobreNosotros />,
 
             }
