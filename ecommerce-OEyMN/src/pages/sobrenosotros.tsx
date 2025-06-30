@@ -10,10 +10,31 @@ const url = (n: string, wrap = false) =>
 
 const servicios = [
   { titulo: "Reparación y Mantenimiento", ruta: "/servicios/reparacion", descripcion: "Soluciones rápidas y profesionales para tu PC o notebook." },
-  { titulo: "Electricidad a Domicilio", ruta: "/servicios/electricidad", descripcion: "Instalaciones y arreglos eléctricos con garantía certificada." },
-  { titulo: "Diseño Web", ruta: "/servicios/web", descripcion: "Creamos sitios modernos, rápidos y accesibles." },
-  { titulo: "Desarrollo de Apps", ruta: "/servicios/apps", descripcion: "Aplicaciones a medida para potenciar tu negocio." },
-  { titulo: "Venta de Hardware Asistida", ruta: "/servicios/hardware", descripcion: "Te asesoramos para elegir componentes potentes y eco‑eficientes." },
+  {
+    titulo: "Venta de Hardware Asistida",
+    ruta: "/servicios/hardware",
+    descripcion: "Asesoramiento experto para elegir hardware potente y eco‑eficiente."
+  },
+  {
+    titulo: "Canje de Hardware",
+    ruta: "canje",
+    descripcion: "Entregá hardware de hasta 3 años de antigüedad y obtené hasta un 40% de descuento en tu compra."
+  },
+  {
+    titulo: "Garantía de Productos",
+    ruta: "/servicios/garantia",
+    descripcion: "Garantía de 3 a 6 meses en reacondicionados o nuevos, con opciones extendidas."
+  },
+  {
+    titulo: "Membresía ECOM Care / PRO+",
+    ruta: "membresia",
+    descripcion: "Mantenimiento mensual, soporte remoto, descuentos y acceso anticipado a nuevos equipos."
+  },
+  {
+    titulo: "Asesoramiento Pre-Venta",
+    ruta: "/servicios/preventa",
+    descripcion: "Te ayudamos a elegir con benchmarks personalizados. Si comprás, tenés un 5% de descuento."
+  }
 ];
 
 const ImageWithFallback = ({
@@ -111,17 +132,20 @@ export default function SobreNosotros() {
           {/* HERO */}
           <ParallaxLayer offset={0} speed={0} factor={1} className="flex justify-center items-center px-4">
             <div className="text-center text-white max-w-4xl space-y-4">
-              <animated.img style={logoAnim} src="/img/foto.png" alt="Logo Ecomputers" className="w-48 h-48 mx-auto shadow-2xl" />
+              <animated.img style={logoAnim} src="/img/foto.png" alt="Logo Ecomputers" className="w-48 h-48 mx-auto " />
 
               <h1 className="text-5xl md:text-6xl font-extrabold tracking-wider">
                 <span className="text-green-600" style={{ textShadow: "0 0 8px rgba(255,255,255,0.65)" }}>ECO</span>
                 <span className="text-blue-600" style={{ textShadow: "0 0 8px rgba(255,255,255,0.65)" }}>MPUTERS</span>
               </h1>
 
-              <p className="text-lg leading-relaxed drop-shadow-sm">
-                En <strong className="text-green-200">Ecomputers</strong> combinamos tecnología de punta con un firme compromiso ambiental.
-                Somos un equipo apasionado que impulsa soluciones tecnológicas sostenibles desde San Salvador de Jujuy.
-              </p>
+             <p className="text-xl leading-relaxed drop-shadow-md text-white">
+  En <strong className="text-green-400 font-extrabold">Ecomputers</strong> combinamos tecnología de punta con un <span className="underline decoration-green-400 decoration-2">firme compromiso ambiental</span>.
+  <br />
+  Somos un equipo apasionado que impulsa <span className="italic text-green-300">soluciones tecnológicas sostenibles</span> desde <strong>San Salvador de Jujuy</strong>.
+  <br />
+  <em className="block mt-3 text-green-200 font-semibold">Impulsar un acceso tecnológico responsable que beneficie a nuestros clientes, la comunidad y al medio ambiente.</em>
+</p>
             </div>
           </ParallaxLayer>
 
@@ -133,16 +157,16 @@ export default function SobreNosotros() {
               <br />
               <br />
               
-              <div className="hidden lg:block relative w-[680px] h-[680px]">
+              <div className="hidden lg:block relative w-[640px] h-[640px]">
                 {servicios.map((srv, i) => {
                   const angle = (360 / servicios.length) * i;
-                  const radius = 260;
+                  const radius = 300;
                   const style = { transform: `translate(-50%, -50%) rotate(${angle}deg) translate(${radius}px) rotate(-${angle}deg)` };
                   return (
                     <div key={srv.titulo} style={style} className="absolute top-1/2 left-1/2 w-64 h-64 p-6 bg-gradient-to-br from-white/80 to-white/60 backdrop-blur-lg rounded-3xl ring-2 ring-green-300 shadow-2xl flex flex-col items-center justify-between text-center transition-transform hover:scale-110 hover:-translate-y-1">
                       <h3 className="text-xl font-semibold text-green-700">{srv.titulo}</h3>
                       <p className="text-sm text-gray-800 italic">{srv.descripcion}</p>
-                      <Link to={srv.ruta} className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full text-sm shadow-lg">Ver más</Link>
+                      <Link to={`/${srv.ruta}`} className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full text-sm shadow-lg">Ver más</Link>
                     </div>
                   );
                 })}
@@ -183,4 +207,4 @@ export default function SobreNosotros() {
       <Footer />
     </>
   );
-}
+} 

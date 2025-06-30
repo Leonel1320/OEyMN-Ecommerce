@@ -88,14 +88,47 @@ const ProductDetailPage: React.FC = () => {
         <main className="max-w-screen-xl mx-auto px-4 py-8">
             <div className="bg-white rounded-lg shadow-md p-8 flex flex-col md:flex-row gap-8 mb-8">
                 {/* Columna de la imagen del producto */}
-                <div className="md:w-1/3 flex justify-center items-start p-4">
+
+                <div className="md:w-1/3 flex justify-center items-start p-4 relative">
+                    {/* Cartel explosión (solo si es reacondicionado) */}
+                    {product.condition === 'reacondicionado' && (
+                        <div
+                            className="absolute bottom-4 left-1/2 -translate-x-1/2 w-44 h-44 select-none pointer-events-none"
+                        >
+                            {/* Explosión SVG */}
+                            <svg
+                                viewBox="0 0 100 100"
+                                className="w-full h-full text-green-500 drop-shadow-lg
+                   animate-pulse"
+                                fill="currentColor"
+                            >
+                                {/* 12‑puntas estilo “boom” */}
+                                <polygon points="
+          50,4 62,36 97,36 68,56
+          79,92 50,70 21,92 32,56
+          3,36 38,36" />
+                            </svg>
+
+                            {/* Texto centrado sobre la explosión */}
+                            <span
+                                className="
+          absolute inset-0 flex flex-col items-center justify-center
+          text-center font-black leading-tight
+          text-white text-xs md:text-sm
+        "
+                            >
+                                GARANTÍA<br />3&nbsp;MESES<br />GRATIS
+                            </span>
+                        </div>
+                    )}
+
+                    {/* Imagen del producto */}
                     <img
                         src={product.imageUrl}
                         alt={product.altText}
                         className="w-full h-auto object-contain max-h-96 rounded-lg shadow-sm"
                     />
                 </div>
-
                 {/* Columna central: detalles del producto (descripción, precio, características) */}
                 <div className="md:w-1/3 flex flex-col">
                     {product.condition === 'reacondicionado' && (
