@@ -44,15 +44,21 @@ export const Home = () => {
     <>
       <OfertasCarousel
         products={productosReacondicionados}
-        title='♻️ Reacondicionado'
+        title='♻️ Reacondicionados Especiales!'
       />
       <OfertasCarousel
         products={productosConOferta}
-        title='🔥 Ofertas Especiales'
+        title='🔥 Ofertas Especiales!'
       />
 
       <BrandGrid />
 
+      <div className="my-16 px-4 lg:px-32 text-center mx-auto">
+        <h2 className="text-3xl font-extrabold mb-4 text-cyan-700 drop-shadow">
+          ⭐ Los más Vendidos
+        </h2>
+        <div className="mx-auto w-24 h-1 bg-gradient-to-r from-cyan-400 via-amber-400 to-rose-400 rounded-full mb-6"></div>
+      </div>
       <ProductGrid colecciones={colecciones} />
 
 
